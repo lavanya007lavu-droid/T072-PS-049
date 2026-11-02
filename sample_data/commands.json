@@ -1,0 +1,18 @@
+{
+  "orders": [
+    {"order_id":"ORD-1001","sku":"PHONE-X","category":"ELECTRONICS","price_paid":20000,"delivery_at":"2026-10-20T10:00:00+05:30","seller_id":"SELLER-01","policy_window_days":7,"payment_type":"PREPAID","serial_number":"SN-PHONE-1001","declared_value":20000,"customer_id":"CUST-01"},
+    {"order_id":"ORD-1002","sku":"CASE-A","category":"ACCESSORIES","price_paid":1000,"delivery_at":"2026-10-25T10:00:00+05:30","seller_id":"SELLER-02","policy_window_days":15,"payment_type":"COD","serial_number":"SN-CASE-1002","declared_value":1000,"customer_id":"CUST-02"},
+    {"order_id":"ORD-1003","sku":"HEADSET-Z","category":"ELECTRONICS","price_paid":5000,"delivery_at":"2026-10-25T10:00:00+05:30","seller_id":"SELLER-03","policy_window_days":7,"payment_type":"PREPAID","serial_number":"SN-HEAD-1003","declared_value":8000,"customer_id":"CUST-03"}
+  ],
+  "commands": [
+    {"op":"RETURN","case_id":"CASE-001","order_id":"ORD-1001","customer_id":"CUST-01","reason":"WRONG_ITEM","requested_at":"2026-10-26T12:00:00+05:30","evidence_flags":{"wrong_item_photo":true}},
+    {"op":"PICKUP","case_id":"CASE-001","attempted_at":"2026-10-27T11:00:00+05:30","outcome":"SUCCESS"},
+    {"op":"RECEIVE","case_id":"CASE-001","receipt":{"received_at":"2026-10-28T14:00:00+05:30","returned_serial":"SN-PHONE-1001","scratches":0,"functional_fault":false,"box_missing":false,"seal_broken":false,"usage_detected":false,"missing_accessory_values":[],"defect_confirmed":false}},
+    {"op":"RETURN","case_id":"CASE-002","order_id":"ORD-1002","customer_id":"CUST-02","reason":"CHANGED_MIND","requested_at":"2026-10-29T09:00:00+05:30","evidence_flags":{}},
+    {"op":"PICKUP","case_id":"CASE-002","attempted_at":"2026-10-30T10:00:00+05:30","outcome":"SUCCESS"},
+    {"op":"RECEIVE","case_id":"CASE-002","receipt":{"received_at":"2026-10-31T13:00:00+05:30","returned_serial":"SN-CASE-1002","scratches":3,"functional_fault":false,"box_missing":false,"seal_broken":true,"usage_detected":false,"missing_accessory_values":[500],"defect_confirmed":false}},
+    {"op":"RETURN","case_id":"CASE-003","order_id":"ORD-1003","customer_id":"CUST-03","reason":"DAMAGED_IN_TRANSIT","requested_at":"2026-10-29T09:00:00+05:30","evidence_flags":{"damage_photo":true}},
+    {"op":"PICKUP","case_id":"CASE-003","attempted_at":"2026-10-30T10:00:00+05:30","outcome":"SUCCESS"},
+    {"op":"RECEIVE","case_id":"CASE-003","receipt":{"received_at":"2026-10-31T13:00:00+05:30","returned_serial":"SN-HEAD-1003","scratches":0,"functional_fault":true,"box_missing":true,"seal_broken":true,"usage_detected":true,"missing_accessory_values":[],"defect_confirmed":false}}
+  ]
+}
