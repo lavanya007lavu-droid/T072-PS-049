@@ -1,0 +1,19 @@
+sku,accessory_id,accessory_name,master_price
+SKU-M01,ACC-01,Charger 25 W,1499.00
+SKU-M01,ACC-02,USB-C cable,399.00
+SKU-M02,ACC-03,Charger 33 W,1299.00
+SKU-M02,ACC-04,USB-C cable,399.00
+SKU-M03,ACC-05,SuperVOOC charger 80 W,2999.00
+SKU-M03,ACC-06,USB-C cable,499.00
+SKU-M04,ACC-07,USB-C cable,1900.00
+SKU-M05,ACC-08,TurboPower charger 68 W,2499.00
+SKU-M05,ACC-09,USB-C cable,399.00
+SKU-L01,ACC-10,65 W adapter,2999.00
+SKU-L02,ACC-11,180 W adapter,4499.00
+SKU-L03,ACC-12,45 W adapter,2299.00
+SKU-T01,ACC-13,Charger 15 W,999.00
+SKU-T02,ACC-14,Charger 10 W,799.00
+SKU-S02,ACC-15,USB-C cable,299.00
+SKU-W01,ACC-16,Magnetic charger,699.00
+SKU-W02,ACC-17,Magnetic charger,899.00
+SKU-S01,ACC-18,Charging cable,3299.00
